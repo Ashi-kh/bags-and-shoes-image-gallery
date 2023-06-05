@@ -10,7 +10,7 @@
 
 body {
     min-height: 100vh;
-    background: #edede9;
+    background: #e7f2fd;
 }
 
 .container {
@@ -24,6 +24,7 @@ body {
 .filter_buttons {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -46,13 +47,23 @@ button.active {
     display: flex;
     margin-top: 25px;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
+    flex-grow: 1;
     flex-basis: 300px;
     background-color: #fff;
     padding: 3px;
     border-radius: 8px;
+}
+
+.card_body {
+    padding: 15px 20px 20px;
+}
+
+.card.hide {
+display: none;
 }
 
 .card img {
@@ -60,10 +71,7 @@ button.active {
     height: 210px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
-}
-
-.card_body {
-    padding: 15px 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .card_title {
@@ -76,5 +84,4 @@ button.active {
     font-size: 18px;
     color: #333;
 }
-
 
