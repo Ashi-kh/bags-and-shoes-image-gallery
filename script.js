@@ -1,3 +1,4 @@
+
 //برای انتخاب تمام کارت ها و کلیدهای فیلتر
 const filterButtons = document.querySelectorAll(".filter_buttons button");
 const filterableCards = document.querySelectorAll(".filterable_cards .card");
@@ -17,7 +18,6 @@ if(card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all
 }
 });
 };
-
 
 // click event listener to each filter button
 filterButtons.forEach(button => button.addEventListener("click", filterCards));
